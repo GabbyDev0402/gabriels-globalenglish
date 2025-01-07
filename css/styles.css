@@ -1,0 +1,268 @@
+/* General styles */
+/* General styles */
+body {
+    font-family: 'Roboto', sans-serif; /* Updated to use Google Fonts */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* Header styles */
+header {
+    background: #1e3a8a;
+    padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added box shadow */
+}
+
+nav.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.8em;
+    font-weight: 500;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav li {
+    padding-left: 1em;
+}
+
+nav a:hover {
+    color: #ff6600;
+}
+
+/* Hero section styles */
+section.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./img/background.jpg"); /* Added gradient */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    min-height: 400px;
+    padding: 150px 20px;
+}
+
+section.hero .container h1 {
+    font-size: 3em;
+    margin: 0;
+    font-weight: bold;
+}
+
+section.hero .container p {
+    font-size: 1.2em;
+}
+
+section.hero .container a.cta-button {
+    margin-top: 2em;
+    text-decoration: none;
+    background-color: #ff6600;
+    color: white;
+    padding: .7em 1.5em;
+    display: inline-block;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease; /* Added transition */
+}
+
+section.hero .container a.cta-button:hover {
+    background-color: #e55a00;
+}
+
+/* General section styles */
+section {
+    padding: 60px 20px;
+}
+
+section h2 {
+    font-size: 2.5em;
+    color: #1e3a8a;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* About section styles */
+section.about {
+    background-color: #f4f4f4;
+}
+
+.about .content-area {
+    display: flex;
+    gap: 2em;
+    align-items: start;
+}
+
+.about .content-area .image-container {
+    flex: 1;
+    max-width: 50%;
+}
+
+.about .content-area .image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added box shadow */
+}
+
+.about .content-area .text-container {
+    flex: 2;
+    padding: 10px;
+}
+
+/* Services section styles */
+.services ul {
+    list-style: none;
+    padding: 0;
+}
+
+.services ul li {
+    padding: 15px 0;
+    border-bottom: 1px solid #dedede;
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    position: relative;
+    padding-left: 30px; /* Space for icon */
+}
+
+.services ul li:before {
+    content: '✔'; /* Icon for list items */
+    position: absolute;
+    left: 0;
+    color: #1e3a8a;
+    font-size: 1.2em;
+}
+
+/* Testimonials section styles */
+section .testimonials-list {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.testimonial-container {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added box shadow */
+}
+
+.testimonial-container blockquote {
+    font-size: 1em;
+    color: #555;
+}
+
+.testimonial-container cite {
+    display: block;
+    margin-top: 10px;
+    font-size: 0.9em;
+    font-weight: bold;
+    color: #1e3a8a;
+}
+
+/* Blog section styles */
+.blog {
+    background-color: #fff; /* Changed to a different background color to separate the blog section */
+    padding: 50px 0;
+}
+
+.blog-post {
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #dedede;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added box shadow */
+}
+
+.blog-post h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #1e3a8a;
+}
+
+.blog-post p {
+    font-size: 1em;
+    color: #666;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #1e3a8a;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Added transition */
+}
+
+.read-more:hover {
+    color: #ff6600;
+}
+
+/* Footer styles */
+footer {
+    background-color: #1e3a8a;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1); /* Added box shadow */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    nav.container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        margin-top: 1em;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav li {
+        padding: 0.5em 0;
+    }
+
+    section.hero .container h1 {
+        font-size: 2.2em;
+    }
+
+    section.hero .container p {
+        font-size: 1em;
+    }
+
+    .content-area {
+        flex-direction: column;
+    }
+
+    .testimonials-list {
+        grid-template-columns: 1fr;
+    }
+
+    form {
+        width: 100%;
+    }
+}

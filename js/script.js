@@ -55,23 +55,6 @@ document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
 });
 
 
-
-
-// Blog Post Initialization (Dynamic Generation)
-const blogPosts = [
-    {
-        title: "How to Improve Your English Speaking Skills",
-        excerpt: "Speaking English fluently is a common goal for many language learners. Here are some practical tips to help you become more confident and articulate in English...",
-        link: "blog/blog-post-1.html",
-    },
-    {
-        title: "Mastering English Prepositions: A Comprehensive Guide", // Added second blog post
-        excerpt: "Prepositions can be tricky! This guide breaks down common uses and mistakes, helping you master these essential words.",
-        link: "blog/prepositions-guide.html",  // Assuming the file name
-    },
-    // ... more blog posts
-];
-
 const blogContainer = document.querySelector('.blog-posts');
 
 blogPosts.forEach(post => {

@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #333; /* Darker background color */
+    color: #fff; /* Light color for text */
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #333; /* Dark color for container text */
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333; /* Changed to a darker color for visibility */
+}
+
+h2 {
+    font-size: 1.75em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #333; /* Changed to a darker color for visibility */
+}
+
+h3 {
+    font-size: 1.5em;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: #333; /* Changed to a darker color for visibility */
+}
+
+p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+strong {
+    font-weight: 600;
+}
+
+ul, ol {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+figure {
+    text-align: center;
+    margin: 20px 0;
+}
+
+figcaption {
+    font-size: 0.9em;
+    color: #777;
+}
+
+a {
+    color: #0073e6;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #005bb5; /* Darker blue for hover */
+}
+
+footer {
+    margin-top: 30px;
+    font-size: 0.9em;
+    text-align: center;
+    background-color: #222; /* Darker background color for footer */
+    color: #fff;
+    padding: 10px 0;
+}
+
+button {
+    background-color: #0073e6;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #005bb5; /* Darker blue for hover */
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    h3 {
+        font-size: 1.25em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+}

@@ -1,176 +1,110 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+/* blog-styles.css */
 
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-  }
-  
-  nav li {
-    float: left;
-  }
-  
-  nav li a {
-    display: block;
-    color: white;
+/* Blog Header */
+.blog-header {
     text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-
-  nav li a {
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-  }
-
-  nav li a:hover {
-    background-color: #111;
-  }
-
-  nav ul {
-    background-color: #333;
-  }
-  
-  nav li a {
-    color: white;
-  }
-
-  @media screen and (max-width: 600px) {
-    nav li {
-      float: none;
-      width: 100%;
-    }
-  }
-
-  nav {
-    display: flex;
-    justify-content: space-around;
-    background-color: #333;
-  }
-  
-body {
-    font-family: 'Poppins', sans-serif;
-    line-height: 1.6;
-    background-color: #333; /* Darker background color */
-    color: #fff; /* Light color for text */
-    padding: 20px;
+    padding: 15px 20px; /* Further reduced vertical padding from 20px to 15px */
+    background-color: #f9f9f9;
+    border-bottom: 2px solid #eaeaea;
 }
 
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    background: #fff;
-    padding: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    color: #333; /* Dark color for container text */
+.blog-header h1 {
+    font-size: 2.2em; /* Slightly reduced font size for headings */
+    margin-bottom: 3px; /* Further reduced margin-bottom from 5px to 3px */
 }
 
-h1 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    text-align: center;
-    color: whitesmoke; /* Changed to a darker color for visibility */
-}
-
-h2 {
-    font-size: 1.75em;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    color: #333; /* Changed to a darker color for visibility */
-}
-
-h3 {
-    font-size: 1.5em;
-    margin-top: 15px;
-    margin-bottom: 10px;
-    color: #333; /* Changed to a darker color for visibility */
-}
-
-p {
+.blog-header p {
     font-size: 1.1em;
+    color: #555;
+}
+
+/* Blog Posts */
+.blog-posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 40px 20px;
+}
+
+.blog-post {
+    background-color: #fff;
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 45%;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.blog-post img {
+    width: 100%;
+    height: auto;
+}
+
+.blog-content {
+    padding: 20px;
+}
+
+.blog-content h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.blog-content p {
+    font-size: 1.1em;
+    color: #555;
     margin-bottom: 15px;
 }
 
-strong {
-    font-weight: 600;
-}
-
-ul, ol {
-    padding-left: 20px;
-    margin-bottom: 20px;
-}
-
-li {
-    margin-bottom: 10px;
-}
-
-figure {
-    text-align: center;
-    margin: 20px 0;
-}
-
-figcaption {
-    font-size: 0.9em;
-    color: #777;
-}
-
-a {
-    color: #0073e6;
+.read-more {
+    color: #007bff;
     text-decoration: none;
+    font-weight: bold;
 }
 
-a:hover {
+.read-more:hover {
     text-decoration: underline;
-    color: #005bb5; /* Darker blue for hover */
 }
 
-footer {
-    margin-top: 30px;
-    font-size: 0.9em;
+/* Pagination */
+.pagination {
     text-align: center;
-    background-color: #222; /* Darker background color for footer */
-    color: #fff;
-    padding: 10px 0;
+    padding: 20px 0;
 }
 
-button {
-    background-color: #0073e6;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1em;
-    cursor: pointer;
-    border-radius: 5px;
+.pagination a {
+    color: #007bff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
 }
 
-button:hover {
-    background-color: #005bb5; /* Darker blue for hover */
+.pagination a:hover {
+    text-decoration: underline;
 }
 
-@media (max-width: 600px) {
-    body {
-        padding: 10px;
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .blog-header {
+        padding: 10px 20px; /* Further reduced padding for smaller screens */
     }
 
-    .container {
-        padding: 15px;
+    .blog-header h1 {
+        font-size: 1.8em; /* Even smaller heading for smaller screens */
+        margin-bottom: 2px; /* Even smaller margin for smaller screens */
     }
 
-    h1 {
-        font-size: 2em;
+    .blog-header p {
+        font-size: 1em; /* Slightly smaller paragraph text for smaller screens */
     }
 
-    h2 {
-        font-size: 1.5em;
+    .blog-posts {
+        padding: 20px 20px; /* Reduced padding for blog posts on smaller screens */
     }
 
-    h3 {
-        font-size: 1.25em;
-    }
-
-    p {
-        font-size: 1em;
+    .blog-post {
+        width: 100%;
+        margin-bottom: 30px; /* Reduced margin between posts on smaller screens */
     }
 }

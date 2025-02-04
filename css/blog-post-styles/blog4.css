@@ -1,0 +1,279 @@
+/* blog4.css */
+
+/* Peach Color Palette (Adjust these hex codes as needed) */
+:root {
+    --peach-light: #ffe0b2;      /* Light Peach (e.g., for backgrounds, accents) */
+    --peach-medium: #ffb74d;     /* Medium Peach (e.g., for primary buttons, highlights) */
+    --peach-dark: #ff9800;       /* Dark Peach (e.g., for stronger accents, hover states) */
+    --peach-text: #333333;       /* Dark Text Color (for readability on peach backgrounds) */
+    --white: #ffffff;           /* White */
+    --light-gray: #f4f4f4;      /* Light Gray for subtle backgrounds */
+    --dark-gray: #777777;       /* Darker Gray for secondary text, etc. */
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0; /* Reset default body margin */
+    line-height: 1.6;
+    color: var(--peach-text);
+    background-color: var(--white); /* White body background */
+}
+
+/* Navigation Styles */
+nav {
+    background-color: var(--peach-light); /* Light peach navigation background */
+    padding: 15px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for navigation */
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px; /* Adjust max width as needed */
+    margin: 0 auto;
+    padding: 0 15px; /* Add padding for smaller screens */
+}
+
+nav .logo {
+    font-size: 1.8em;
+    font-weight: 700;
+    color: var(--peach-text); /* Dark text for logo */
+    text-decoration: none;
+}
+
+nav .nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav .nav-links li {
+    margin-left: 25px;
+}
+
+nav .nav-links li:first-child {
+    margin-left: 0;
+}
+
+nav .nav-links a {
+    text-decoration: none;
+    color: var(--peach-text); /* Dark text for nav links */
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav .nav-links a:hover {
+    color: var(--peach-dark); /* Darker peach on hover */
+}
+
+nav .book-button {
+    background-color: var(--peach-medium); /* Medium peach for book button */
+    color: var(--white); /* White text on button */
+    padding: 10px 18px;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+nav .book-button:hover {
+    background-color: var(--peach-light); /* Darker peach on button hover */
+}
+
+/* Header Styles (Blog Title) */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 30px 20px; /* Add padding to header content */
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: var(--peach-dark); /* Dark Peach for main heading */
+}
+
+/* Article Content Styles */
+article {
+    max-width: 900px; /* Standard blog content width */
+    margin: 0 auto;
+    padding: 0 20px; /* Add padding to article content */
+}
+
+h2 {
+    font-size: 2em;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    color: var(--peach-medium); /* Medium Peach for section headings */
+}
+
+h3 {
+    font-size: 1.5em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: var(--peach-medium); /* Medium Peach for subsection headings if any */
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+ul, ol {
+    margin-bottom: 15px;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+strong {
+    font-weight: 500;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid var(--peach-light); /* Light peach border for table */
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: var(--peach-light); /* Light peach background for table header */
+    font-weight: bold;
+}
+
+figure {
+    margin: 20px 0;
+    text-align: center;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px; /* Slightly rounded corners for images */
+}
+
+figcaption {
+    font-size: 0.9em;
+    color: var(--dark-gray); /* Darker gray for figcaption */
+    margin-top: 5px;
+}
+
+a {
+    color: var(--peach-medium); /* Medium peach for links in content */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--peach-dark); /* Darker peach on link hover */
+    text-decoration: underline;
+}
+
+sup a { /* Style for citation links */
+    font-size: 0.8em;
+    vertical-align: super;
+}
+
+/* Works Cited Section Styles */
+#works-cited-section {
+    margin-top: 30px;
+    padding-bottom: 30px; /* Add padding to bottom of works cited section */
+}
+
+#toggle-sources {
+    background-color: var(--peach-medium); /* Medium peach for toggle button */
+    color: var(--white); /* White text on toggle button */
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+}
+
+#toggle-sources:hover {
+    background-color: var(--peach-dark); /* Darker peach on toggle button hover */
+    color: black; 
+}
+
+#works-cited {
+    padding-left: 20px;
+    font-size: 0.9em;
+    list-style-type: decimal; /* Use decimal numbering for works cited */
+}
+
+#works-cited li {
+    margin-bottom: 10px; /* Add spacing between works cited entries */
+}
+
+
+/* Footer Styles */
+.blog-footer {
+    background-color: var(--peach-light); /* Light peach footer background */
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px; /* Add margin above footer to separate from content */
+    color: var(--peach-text); /* Dark text for footer */
+    font-size: 0.9em;
+    border-top: 1px solid var(--peach-medium); /* Medium peach border on top of footer */
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    body {
+        margin: 0; /* Reset body margin for smaller screens */
+    }
+
+    nav .container {
+        flex-direction: column; /* Stack logo and nav links on smaller screens */
+        align-items: flex-start; /* Align items to the start on smaller screens */
+    }
+
+    nav .logo {
+        margin-bottom: 10px; /* Add margin below logo when stacked */
+    }
+
+    nav .nav-links {
+        flex-direction: column; /* Stack nav links vertically on smaller screens */
+        width: 100%; /* Take full width */
+        margin-top: 10px; /* Add some space above nav links */
+        align-items: flex-start; /* Align links to the start */
+    }
+
+    nav .nav-links li {
+        margin-left: 0; /* Remove left margin for stacked links */
+        margin-bottom: 10px; /* Add margin between stacked links */
+    }
+
+    header {
+        padding: 20px 10px; /* Adjust header padding for smaller screens */
+    }
+
+    h1 {
+        font-size: 2em; /* Smaller main heading on smaller screens */
+    }
+
+    h2 {
+        font-size: 1.7em; /* Smaller section headings on smaller screens */
+    }
+
+    h3 {
+        font-size: 1.3em; /* Smaller subsection headings on smaller screens */
+    }
+
+    article {
+        padding: 0 10px; /* Adjust article padding for smaller screens */
+    }
+}

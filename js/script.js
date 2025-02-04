@@ -67,3 +67,4 @@ blogPosts.forEach(post => {
     `;
     blogContainer.appendChild(postElement);
 });
+
